@@ -1,0 +1,74 @@
+<?xml version = "1.0" encoding = "UTF-8" />
+<menu>
+     <section name="SPECIAL OFFERS">
+         <entry>
+             <item>Spicy Box</item>
+             <price>7.50</price>
+         </entry>
+         <entry>
+             <item>Snack Box A</item>
+             <price>6.00</price>
+         </entry>
+         <entry>
+             <item>Snack Box B</item>
+             <price>6.00</price>
+         </entry>
+     </section>
+     <section name="Chow Mein(Noodles)">
+         <entry>
+             <item>King Prawn Chow Mein</item>
+             <price>9.90</price>
+         </entry>
+         <entry>
+             <item>Roast Duck Chow Mein</item>
+             <price>9.90</price>
+         </entry>
+         <entry>
+             <item>Beef Chow Mein</item>
+             <price>9.50</price>
+         </entry>
+     </section>
+     <section name="Rice">
+         <entry>
+             <item>King Prawn Rice</item>
+             <price>9.90</price>
+         </entry>
+         <entry>
+             <item>Roast Duck Rice</item>
+             <price>9.90</price>
+         </entry>
+         <entry>
+             <item>Singapore Style Rice</item>
+             <price>9.90</price>
+         </entry>
+     </section>
+     <section name="Side Orders">
+         <entry>
+             <item>Prawn Cracker</item>
+             <price>2.00</price>
+         </entry>
+         <entry>
+             <item>Chips</item>
+             <price>2.30</price>
+         </entry>
+         <entry>
+             <item>Fried Rice</item>
+             <price>2.60</price>
+         </entry>
+     </section>
+     <section name="Soft Drink">
+         <entry>
+             <item>Club Orange</item>
+             <price>1.50</price>
+         </entry>
+         <entry>
+             <item>Coke</item>
+             <price>1.50</price>
+         </entry>
+         <entry>
+             <item>7up</item>
+             <price>1.50</price>
+         </entry>
+     </section>
+
+</menu>
