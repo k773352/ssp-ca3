@@ -1,4 +1,4 @@
-<?xml version = "1.0" encoding = "UTF-8" />
+<?xml version = "1.0" encoding = "UTF-8" standalone="yes"?>
 <menu>
      <section name="SPECIAL OFFERS">
          <entry>
@@ -70,5 +70,4 @@
              <price>1.50</price>
          </entry>
      </section>
-
 </menu>
