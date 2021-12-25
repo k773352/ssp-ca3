@@ -12,7 +12,15 @@ const   router = express(),
 
 router.get('/get/html', function(req, res) {
 
+    let xml = fs.readFileSync('AsianfoodTakeaway.xml', 'utf8'),
+    xsl = fs.readFileSync('AsianfoodTakeaway.xsl', 'utf8');
 
+    let doc = xmlParse(xml),
+        stylesheet = xmlParse(xsl);
+
+    let result = xsltProcess(doc, stylesheet);
+
+    res.end(result.toString());
 
 });
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() 
