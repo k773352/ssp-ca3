@@ -10,7 +10,7 @@ const   http = require('http'), //This module provides the HTTP server functiona
 const   router = express(), 
         server = http.createServer(router);
 
-router.get('/get/html', function(req, res) {
+router.get('/', function(req, res) {
 
     let xml = fs.readFileSync('AsianfoodTakeaway.xml', 'utf8'),
     xsl = fs.readFileSync('AsianfoodTakeaway.xsl', 'utf8');
