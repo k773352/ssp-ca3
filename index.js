@@ -12,7 +12,7 @@ const   router = express(),
 
 router.use(express.static(path.resolve(__dirname,'views'))); //We serve static content from "views" folder
 
-router.get('/', function(req, res) {
+router.get('/get/html', function(req, res) {
 
     let xml = fs.readFileSync('AsianfoodTakeaway.xml', 'utf8'),
     xsl = fs.readFileSync('AsianfoodTakeaway.xsl', 'utf8');
