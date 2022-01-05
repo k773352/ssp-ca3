@@ -10,21 +10,31 @@ const   http = require('http'), //This module provides the HTTP server functiona
 const   router = express(), 
         server = http.createServer(router);
 
+router.use(express.static(path.resolve(__dirname,'views'))); //We serve static content from "views" folder
+
 router.get('/', function(req, res) {
 
     let xml = fs.readFileSync('AsianfoodTakeaway.xml', 'utf8'),
     xsl = fs.readFileSync('AsianfoodTakeaway.xsl', 'utf8');
 
+    console.log(xml);
+    console.log(xsl);
+
     let doc = xmlParse(xml),
         stylesheet = xmlParse(xsl);
 
+    console.log(doc);
+    console.log(stylesheet);
+
     let result = xsltProcess(doc, stylesheet);
+
+    console.log(result);
 
     res.end(result.toString());
 
 });
-server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() 
-{
+
+server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
     const addr = server.address();
     console.log("Server listening at", addr.address + ":" + addr.port)
 });
