@@ -14,6 +14,8 @@ router.use(express.static(path.resolve(__dirname,'views'))); //We serve static c
 
 router.get('/get/html', function(req, res) {
 
+    res.writeHead(200, {'Content-Type' : 'text/html'});
+
     let xml = fs.readFileSync('AsianfoodTakeaway.xml', 'utf8'),
     xsl = fs.readFileSync('AsianfoodTakeaway.xsl', 'utf8');
 
